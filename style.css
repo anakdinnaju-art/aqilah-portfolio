@@ -37,21 +37,21 @@ nav ul a:hover,nav ul a.active{color:#fff;background:var(--ink)}
   position:relative;
   overflow:hidden;
   border-radius:0;
-  min-height:clamp(1500px,82vh,860px);
+  min-height:clamp(560px,100vh,1500px);
   padding:130px clamp(60px,10vw,180px) 60px;
   display:flex;
   flex-direction:column;
   color:var(--cream);
   background:
     linear-gradient(180deg,rgba(48,40,36,.35) 0%,rgba(48,40,36,0) 30%,rgba(48,40,36,.1) 70%,rgba(48,40,36,.45) 100%),
-    url("images/hero-bg.jpg") center/cover no-repeat;
+    url("images/hero-bg.jpg") center 40%/cover no-repeat;
 }
 .hero-giant{
   margin-top:clamp(8px,5vh,48px);
   text-align:center;
   font-family:var(--display);
   font-weight:700;
-  font-size:clamp(56px,11vw,168px);
+  font-size:clamp(56px,13vw,400px);
   line-height:.92;
   letter-spacing:-.02em;
   text-transform:uppercase;
