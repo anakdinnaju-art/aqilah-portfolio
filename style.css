@@ -38,7 +38,7 @@ nav ul a:hover,nav ul a.active{color:#fff;background:var(--ink)}
   overflow:hidden;
   border-radius:0;
   min-height:clamp(560px,100vh,1500px);
-  padding:130px clamp(60px,10vw,180px) 60px;
+  padding:90px clamp(60px,10vw,180px) 60px;
   display:flex;
   flex-direction:column;
   color:var(--cream);
@@ -60,14 +60,15 @@ nav ul a:hover,nav ul a.active{color:#fff;background:var(--ink)}
 }
 .hero-content{
   margin-top:clamp(8px,3vh,24px);
+  padding:0 7vw;
   display:flex;
   align-items:flex-start;
   justify-content:space-between;
   gap:20px;
   flex-wrap:wrap;
 }
-.hero-tagline{font-family:var(--body);font-weight:500;font-size:clamp(16px,1.8vw,20px);line-height:1.35;max-width:20ch}
-.hero-chip{display:inline-flex;align-items:center;padding:10px 20px;border-radius:999px;border:1px solid rgba(255,246,234,.55);background:rgba(48,40,36,.3);backdrop-filter:blur(6px);font-size:14px;font-weight:600;white-space:nowrap}
+.hero-tagline{font-family:var(--body);font-weight:500;font-size:clamp(20px,2.4vw,30px);line-height:1.1;max-width:20ch}
+.hero-chip{font-size:22px;padding:14px 30px;display:inline-flex;;align-items:center;border-radius:999px;border:1px solid rgba(255,246,234,.55);background:rgba(48,40,36,.3);backdrop-filter:blur(6px);font-weight:600;white-space:nowrap}
 .hero-social{position:absolute;left:clamp(60px,10vw,180px);bottom:clamp(20px,4vh,44px);display:flex;gap:10px}
 .social-icon{width:44px;height:44px;border-radius:50%;background:var(--cream);display:grid;place-items:center;box-shadow:0 8px 20px rgba(48,40,36,.3);transition:transform .2s ease}
 .social-icon:hover{transform:translateY(-3px)}
