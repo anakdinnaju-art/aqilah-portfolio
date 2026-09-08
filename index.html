@@ -6,6 +6,7 @@
 <title>Aqilah — Graphic Designer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,300&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/14.2.0/swiper-bundle.min.css">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -60,39 +61,126 @@
 
 <section id="work">
   <div class="wrap">
-    <h2>Selected work</h2>
-    <div class="projects">
+    <div class="work-head">
+      <h2>My Selected Work</h2>
+      <div class="work-nav">
+        <button class="work-nav-btn work-prev" aria-label="Previous projects">&#8249;</button>
+        <button class="work-nav-btn work-next" aria-label="Next projects">&#8250;</button>
+      </div>
+    </div>
 
-      <article class="project">
-        <div class="thumb">01</div>
-        <div class="body">
-          <h3>Brand Identity Design</h3>
-          <p>A complete visual identity system — logo, colour palette, typography and brand guidelines built for a local business.</p>
-          <div class="tags"><span>Branding</span><span>Illustrator</span><span>Print</span></div>
-          <a class="link" href="#">View project</a>
+    <div class="swiper work-swiper">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <article class="project">
+            <div class="thumb"><span class="thumb-num">01</span><img src="images/work-01.jpg" alt="Campaign & Marketing Design project thumbnail" loading="lazy" onerror="this.remove()"></div>
+            <div class="body">
+              <h3>Campaign &amp; Marketing Design</h3>
+              <p>Integrated campaign visuals across digital and print, built to keep a brand consistent from feed to storefront.</p>
+              <div class="tags"><span>Campaign</span><span>Branding</span><span>Social Media</span></div>
+              <a class="link" href="#">View project</a>
+            </div>
+          </article>
         </div>
-      </article>
 
-      <article class="project">
-        <div class="thumb">02</div>
-        <div class="body">
-          <h3>Event Poster Series</h3>
-          <p>A set of promotional posters for university and community events, pairing bold typography with striking visuals.</p>
-          <div class="tags"><span>Poster</span><span>Photoshop</span><span>Print</span></div>
-          <a class="link" href="#">View project</a>
+        <div class="swiper-slide">
+          <article class="project">
+            <div class="thumb"><span class="thumb-num">02</span><img src="images/work-02.jpg" alt="Editorial & Publication Design project thumbnail" loading="lazy" onerror="this.remove()"></div>
+            <div class="body">
+              <h3>Editorial &amp; Publication Design</h3>
+              <p>Layout and typography for magazines, zines and reports, balancing readability with visual character.</p>
+              <div class="tags"><span>Editorial</span><span>Layout</span><span>Typography</span></div>
+              <a class="link" href="#">View project</a>
+            </div>
+          </article>
         </div>
-      </article>
 
-      <article class="project">
-        <div class="thumb">03</div>
-        <div class="body">
-          <h3>3D Interior Visualization</h3>
-          <p>An interior space concept modelled in SketchUp and rendered in Blender, exploring lighting, materials and mood.</p>
-          <div class="tags"><span>SketchUp</span><span>Blender</span><span>3D</span></div>
-          <a class="link" href="#">View project</a>
+        <div class="swiper-slide">
+          <article class="project">
+            <div class="thumb"><span class="thumb-num">03</span><img src="images/work-03.jpg" alt="Branding & Identity Design project thumbnail" loading="lazy" onerror="this.remove()"></div>
+            <div class="body">
+              <h3>Branding &amp; Identity Design</h3>
+              <p>Complete visual identity systems — logo, colour palette, typography and brand guidelines built to last.</p>
+              <div class="tags"><span>Branding</span><span>Identity</span><span>Logo</span></div>
+              <a class="link" href="#">View project</a>
+            </div>
+          </article>
         </div>
-      </article>
 
+        <div class="swiper-slide">
+          <article class="project">
+            <div class="thumb"><span class="thumb-num">04</span><img src="images/work-04.jpg" alt="Event & Exhibition Design project thumbnail" loading="lazy" onerror="this.remove()"></div>
+            <div class="body">
+              <h3>Event &amp; Exhibition Design</h3>
+              <p>Signage, booths and print collateral designed to guide and engage visitors at events and exhibitions.</p>
+              <div class="tags"><span>Event</span><span>Signage</span><span>Print</span></div>
+              <a class="link" href="#">View project</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="swiper-slide">
+          <article class="project">
+            <div class="thumb"><span class="thumb-num">05</span><img src="images/work-05.jpg" alt="Photography & Videography project thumbnail" loading="lazy" onerror="this.remove()"></div>
+            <div class="body">
+              <h3>Photography &amp; Videography</h3>
+              <p>Product, portrait and event photography paired with short-form video content for brands and events.</p>
+              <div class="tags"><span>Photography</span><span>Videography</span><span>Editing</span></div>
+              <a class="link" href="#">View project</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="swiper-slide">
+          <article class="project">
+            <div class="thumb"><span class="thumb-num">06</span><img src="images/work-06.jpg" alt="3D & Spatial Design project thumbnail" loading="lazy" onerror="this.remove()"></div>
+            <div class="body">
+              <h3>3D &amp; Spatial Design</h3>
+              <p>3D models and interior visualizations exploring lighting, materials and mood in real and imagined spaces.</p>
+              <div class="tags"><span>3D</span><span>SketchUp</span><span>Blender</span></div>
+              <a class="link" href="#">View project</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="swiper-slide">
+          <article class="project">
+            <div class="thumb"><span class="thumb-num">07</span><img src="images/work-07.jpg" alt="Web & Digital Design project thumbnail" loading="lazy" onerror="this.remove()"></div>
+            <div class="body">
+              <h3>Web &amp; Digital Design</h3>
+              <p>Interfaces and digital experiences for websites and apps, designed and prototyped in Figma.</p>
+              <div class="tags"><span>UI/UX</span><span>Figma</span><span>Web</span></div>
+              <a class="link" href="#">View project</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="swiper-slide">
+          <article class="project">
+            <div class="thumb"><span class="thumb-num">08</span><img src="images/work-08.jpg" alt="Packaging Design project thumbnail" loading="lazy" onerror="this.remove()"></div>
+            <div class="body">
+              <h3>Packaging Design</h3>
+              <p>Structural and surface design for product packaging that stands out on the shelf.</p>
+              <div class="tags"><span>Packaging</span><span>Print</span><span>Branding</span></div>
+              <a class="link" href="#">View project</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="swiper-slide">
+          <article class="project">
+            <div class="thumb"><span class="thumb-num">09</span><img src="images/work-09.jpg" alt="Illustration & Drawing project thumbnail" loading="lazy" onerror="this.remove()"></div>
+            <div class="body">
+              <h3>Illustration &amp; Drawing</h3>
+              <p>Custom illustrations and hand-drawn artwork used across branding, editorial and social content.</p>
+              <div class="tags"><span>Illustration</span><span>Drawing</span><span>Digital Art</span></div>
+              <a class="link" href="#">View project</a>
+            </div>
+          </article>
+        </div>
+
+      </div>
     </div>
   </div>
 </section>
@@ -130,6 +218,7 @@
   <div class="wrap">© <span id="year"></span> Aqilah. Portfolio built with HTML &amp; CSS.</div>
 </footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/14.2.0/swiper-bundle.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>

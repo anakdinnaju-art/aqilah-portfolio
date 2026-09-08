@@ -11,7 +11,7 @@
   --shadow:0 22px 60px rgba(73,50,40,.12);
   --display:"Fraunces",Georgia,serif;
   --body:"DM Sans",system-ui,sans-serif;
-  --max:1100px;
+  --max:1400px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
@@ -90,12 +90,23 @@ section h2{font-size:clamp(36px,5vw,60px);letter-spacing:-.04em;line-height:.98;
 .about-btn{display:inline-flex;align-items:center;margin-top:8px;padding:14px 26px;border-radius:999px;background:var(--accent);color:#fff;font-weight:700;font-size:14px;box-shadow:0 12px 30px rgba(168,79,57,.2);transition:transform .2s ease,background .2s ease}
 .about-btn:hover{background:var(--accent-dark);transform:translateY(-2px)}
 
+/* ===== Work carousel ===== */
+.work-head{display:flex;align-items:baseline;justify-content:space-between;gap:24px;margin-bottom:40px}
+.work-head h2{margin-bottom:0}
+.work-nav{display:flex;gap:10px;flex-shrink:0}
+.work-nav-btn{width:52px;height:52px;flex-shrink:0;border:none;border-radius:50%;background:var(--cream);color:var(--ink);font-family:var(--body);font-size:22px;line-height:1;display:grid;place-items:center;cursor:pointer;box-shadow:0 8px 20px rgba(48,40,36,.25);transition:transform .2s ease,background .2s ease}
+.work-nav-btn:hover{background:#fff;transform:translateY(-3px)}
+.work-nav-btn.swiper-button-disabled{opacity:.35;cursor:default;pointer-events:none;transform:none}
+.work-swiper{overflow:hidden;padding:6px 4px 24px}
+.work-swiper .swiper-wrapper{align-items:stretch}
+.work-swiper .swiper-slide{height:auto;display:flex}
+
 /* ===== Projects ===== */
-.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.project{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 8px 20px rgba(82,48,35,.05);transition:.28s ease}
+.project{width:100%;background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 8px 20px rgba(82,48,35,.05);transition:.28s ease}
 .project:hover{transform:translateY(-6px);border-color:rgba(166,79,59,.35);box-shadow:var(--shadow)}
-.project .thumb{aspect-ratio:4/3;background:linear-gradient(135deg,rgba(166,79,59,.22),rgba(247,241,231,.9)),repeating-linear-gradient(45deg,rgba(124,55,43,.06) 0 1px,transparent 1px 20px);display:grid;place-items:center;color:rgba(124,55,43,.35);font-family:var(--display);font-size:clamp(40px,6vw,64px);font-weight:800}
-.project .thumb img{width:100%;height:100%;object-fit:cover}
+.project .thumb{position:relative;aspect-ratio:4/3;background:linear-gradient(135deg,rgba(166,79,59,.22),rgba(247,241,231,.9)),repeating-linear-gradient(45deg,rgba(124,55,43,.06) 0 1px,transparent 1px 20px);display:grid;place-items:center;color:rgba(124,55,43,.35);font-family:var(--display);font-size:clamp(40px,6vw,64px);font-weight:800;overflow:hidden}
+.thumb-num{position:relative;z-index:0}
+.project .thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
 .project .body{padding:22px 22px 24px;display:flex;flex-direction:column;gap:10px;flex:1}
 .project h3{font-size:23px;font-weight:700}
 .project p{color:var(--mute);font-size:15px;flex:1}
@@ -129,7 +140,6 @@ footer{padding:32px 0;color:var(--mute);font-size:14px;text-align:center}
 
 /* ===== Responsive ===== */
 @media(max-width:860px){
-  .projects{grid-template-columns:1fr 1fr}
   .skills{grid-template-columns:1fr 1fr}
   nav ul{font-size:13px}
   .hero-card{min-height:clamp(500px,75vh,760px)}
@@ -138,8 +148,9 @@ footer{padding:32px 0;color:var(--mute);font-size:14px;text-align:center}
   .about-copy{padding-right:0}
 }
 @media(max-width:560px){
-  .projects{grid-template-columns:1fr}
   nav ul li:nth-child(n+3){display:none}
+  .work-head{flex-direction:column;align-items:flex-start;gap:16px}
+  .work-nav-btn{width:44px;height:44px;font-size:18px}
   nav .wrap{padding:8px 8px 8px 18px}
   .hero{padding:12px 0 0}
   .hero-card{min-height:clamp(440px,72vh,600px);padding:28px 20px}
@@ -152,5 +163,5 @@ footer{padding:32px 0;color:var(--mute);font-size:14px;text-align:center}
 }
 @media(prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
-  .project,.skill,.social-icon,.about-btn{transition:none}
+  .project,.skill,.social-icon,.about-btn,.work-nav-btn{transition:none}
 }
