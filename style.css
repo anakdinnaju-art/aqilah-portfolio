@@ -51,7 +51,7 @@ nav ul a:hover,nav ul a.active{color:#fff;background:var(--ink)}
   text-align:center;
   font-family:var(--display);
   font-weight:700;
-  font-size:clamp(56px,13vw,400px);
+  font-size:clamp(56px,16vw,400px);
   line-height:.92;
   letter-spacing:-.02em;
   text-transform:uppercase;
