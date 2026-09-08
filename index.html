@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Aqilah — Graphic Designer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;1,9..144,300&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,300&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,8 +14,8 @@
   <div class="wrap">
     <a class="brand" href="#top">Aqilah<span>.</span></a>
     <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#work">Work</a></li>
+      <li><a href="#about" class="active">About</a></li>
+      <li><a href="#work">My Work</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -24,29 +24,34 @@
 
 <header class="hero" id="top">
   <div class="wrap">
-    <p class="kicker">Graphic Designer based in Melaka, Malaysia</p>
-    <h1>Hi, I'm Aqilah.<br>I design <em>bold, visual</em> stories.</h1>
-    <p class="lead">I'm a graphic designer working across branding, print, UI design, photography, videography and 3D — turning ideas into posters, identities, digital interfaces and spatial visuals.</p>
-    <a class="btn" href="#work">See my work</a>
-    <a class="btn ghost" href="#contact">Get in touch</a>
+    <div class="hero-card">
+      <p class="hero-giant" aria-hidden="true">Portfolio</p>
+
+      <div class="hero-content">
+        <h1 class="hero-tagline">A curious mind,<br>creating without limits.</h1>
+        <span class="hero-chip">Creative Alchemist.</span>
+      </div>
+
+      <div class="hero-social">
+        <a class="social-icon" href="#" aria-label="WhatsApp"><img src="images/icon-whatsapp.svg" alt="" width="20" height="20"></a>
+        <a class="social-icon" href="#" aria-label="Instagram"><img src="images/icon-instagram.svg" alt="" width="20" height="20"></a>
+        <a class="social-icon" href="#" aria-label="Behance"><img src="images/icon-behance.svg" alt="" width="20" height="20"></a>
+      </div>
+    </div>
   </div>
 </header>
 
-<section id="about">
-  <div class="wrap two">
-    <div>
-      <h2>About</h2>
-      <ul class="facts">
-        <li><span>Location</span><span>Melaka, Malaysia</span></li>
-        <li><span>Focus</span><span>Graphic Design &amp; Visual Communication</span></li>
-        <li><span>Experience</span><span>3–4 years (2023–Present)</span></li>
-        <li><span>Available</span><span>Freelance &amp; full-time</span></li>
-      </ul>
+<section id="about" class="about">
+  <div class="about-grid">
+    <div class="about-media">
+      <img class="about-portrait" src="images/aqilah.png" alt="Portrait of Aqilah, graphic designer" width="470" height="567">
     </div>
-    <div>
-      <p>I'm a graphic designer who enjoys working across mediums — from brand identities and print posters to UI screens, photography and 3D spaces.</p>
-      <p>My toolkit spans Illustrator, Photoshop and Figma for design and branding, Premiere Pro for video editing, and SketchUp with Blender for 3D modelling and interior visualization.</p>
-      <p>When I'm not designing, I'm usually shooting photos, exploring new layout ideas, or building out a 3D interior concept just for fun.</p>
+    <div class="about-copy">
+      <h2>Hi, I'm Aqilah</h2>
+      <p>I'm a graphic designer based in Melaka with 3–4 years of experience, working across branding, print, UI design, photography, videography and 3D. I enjoy exploring different sides of design instead of sticking to just one.</p>
+      <p>Most of my work is created using Adobe Illustrator, Photoshop, Premiere Pro and Figma, alongside SketchUp and Blender for 3D and interior visualization.</p>
+      <p>I'm naturally curious and always excited to learn something new. For me, every project is a chance to experiment, improve and turn an idea into something people can see, use and experience.</p>
+      <a class="about-btn" href="#work">More About Qila</a>
     </div>
   </div>
 </section>
